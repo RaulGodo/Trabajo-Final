@@ -1,0 +1,279 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFE194;
+    font-family: 'Balsamiq Sans', cursive; 
+	
+	
+
+}
+header {
+	width: 100%;
+	height: 350px;
+	background-image: url(./Img/cofe3.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+nav{
+
+	width: 100%;
+	background-color: #5a3c2762;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px 20px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+nav ul li:hover{
+	background-color: #a7502159;
+}
+
+
+
+section {
+	
+	padding-top: 100px;
+	width: 95%;
+	margin: auto;
+	text-align: justify;
+}
+
+
+p {
+	margin: 16px 0;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #442209ec;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	letter-spacing: 2px;
+	padding-bottom: 5px;
+
+}
+
+footer h4{
+	padding: 5px 0;
+}
+
+.boton{
+	width: 90px;
+	height: 35px;
+	background-color: rgb(62, 39, 39);
+	border-radius: 5px;
+	border: 2px solid#fff;
+	position: fixed;
+	bottom: 55px;
+	right: 15px;
+	transition: 1s;
+}
+
+
+.boton:hover{
+	width: 100px;
+	background-color: #fff;
+	border: 2px solid#0c2f90;
+
+}
+
+.boton p{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-top: 2px;
+}
+
+.boton p:hover{
+	color: rgb(34, 20, 20);
+}
+
+.titulo{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 150px;
+	background-color: rgba(53, 36, 21, 0.807);
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+	font-size: 80px;
+	color: #ffffff;
+	margin: 20px 0 auto;
+}
+h4{
+	font-family: monospace;
+}
+#medio{
+	width: 100%;
+	height: 350px;
+	background-image: url(./Img/coffe1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#medio h2{
+	font-size: 42px;
+	color: #ffffff;
+	margin: 20px 0 auto;
+	text-align: center;
+	background-color: rgb(143, 117, 97);
+	font-family: 'Times New Roman', Times, serif;
+	
+
+}
+
+
+.formulario {
+	width: 80%;
+	margin: 50px auto;
+	padding: 15px;
+	background-color: #5a3c2762;
+	border: 1px solid #B8DFD8;
+	color: #fff;
+	border-radius: 10px;
+	
+
+}
+
+input, textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.guardar {
+	width: 100%;
+	font-size: 16px;
+	background-color: #9de59f;
+	color: white;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	transition: all 1s;
+	border-radius: 10px;
+
+}
+.guardar:hover{
+	background-color: #19bc1e;
+}
+
+.cancelar{
+	width: 100%;
+	font-size: 16px;
+	background-color: #fc9d9d;
+	color: white;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	transition: all 1s;
+	border-radius: 10px;
+
+}
+
+.cancelar:hover {
+	background-color: #fd5959;
+
+}
+
+.tarjetas{
+	width: 100%;
+	padding-top: 0;
+	margin-top: 100px;
+	background-color: #b8dfd8;
+}
+
+.container{
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container img{
+	width: 100%;
+}
+
+.container .card{
+	position: relative;
+	width: 300px;
+	height: 305px;
+	border-radius: 10px;
+	box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	margin: 20px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+
+.container .card .content{
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	padding: 20px;
+}
+
+.container .card .content p{
+	color: #7e7d7d;
+	text-align: justify;
+	font-size: 15px;
+}
+
+.container .card .content a{
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 40px;
+	margin-top: 20px;
+	text-decoration: none;
+}
+
+
+.container:hover .card{
+	transform: scale(1.1);
+	
+}
+
+.caontainer .card:hover{
+	filter: blur(0);
+	transform: scale(1.2);
+	opacity: 1;
+}
+
+
